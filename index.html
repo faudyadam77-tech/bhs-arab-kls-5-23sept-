@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosakata Profesi - Bahasa Arab Kelas 5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            color: #2d3748;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1a202c;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
+        }
+
+        .rule-box {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .rule-box strong {
+            color: #667eea;
+        }
+
+        .arabic {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            direction: rtl;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        thead {
+            background: #667eea;
+            color: white;
+        }
+
+        th {
+            padding: 1rem;
+            text-align: left;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        th:nth-child(3), th:nth-child(4) {
+            text-align: right;
+        }
+
+        td {
+            padding: 1.2rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background: #f7fafc;
+        }
+
+        td:nth-child(3), td:nth-child(4) {
+            text-align: right;
+            font-family: 'Amiri', serif;
+            font-size: 1.4rem;
+            direction: rtl;
+        }
+
+        .gender-label {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .male {
+            background: #ebf4ff;
+            color: #4299e1;
+        }
+
+        .female {
+            background: #fef5f7;
+            color: #ed64a6;
+        }
+
+        .example-box {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .example-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .example-item:last-child {
+            border-bottom: none;
+        }
+
+        .example-arabic {
+            font-family: 'Amiri', serif;
+            font-size: 1.3rem;
+            direction: rtl;
+            color: #2d3748;
+        }
+
+        .example-translation {
+            font-size: 0.9rem;
+            color: #718096;
+            font-style: italic;
+        }
+
+        .tip {
+            background: #fffaf0;
+            border-left: 4px solid #ed8936;
+            padding: 1rem 1.5rem;
+            margin-top: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: #744210;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 2rem 1rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            td:nth-child(3), td:nth-child(4) {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kosakata Profesi</h1>
+            <div class="subtitle">مِهْنَة — Bahasa Arab Kelas 5 SD</div>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">Pola Dasar</h2>
+            <div class="rule-box">
+                <strong>Rumus:</strong> Kata Laki-laki + <span class="arabic">ة</span> (dibaca: <em>ah</em>) = Kata Perempuan<br><br>
+                Contoh: <span class="arabic">مُهَنْدِس</span> (Muhandis) → <span class="arabic">مُهَنْدِسَة</span> (Muhandisah)
+            </div>
+
+            <h2 class="section-title">Daftar Kosakata</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Arti</th>
+                        <th>Laki-laki</th>
+                        <th>Perempuan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Insinyur</td>
+                        <td>
+                            <span class="arabic">مُهَنْدِس</span><br>
+                            <span class="gender-label male">Muhandis</span>
+                        </td>
+                        <td>
+                            <span class="arabic">مُهَنْدِسَة</span><br>
+                            <span class="gender-label female">Muhandisah</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Perawat</td>
+                        <td>
+                            <span class="arabic">مُمَرِّض</span><br>
+                            <span class="gender-label male">Mumarrid</span>
+                        </td>
+                        <td>
+                            <span class="arabic">مُمَرِّضَة</span><br>
+                            <span class="gender-label female">Mumarridah</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Penjahit</td>
+                        <td>
+                            <span class="arabic">خَيَّاط</span><br>
+                            <span class="gender-label male">Khayyat</span>
+                        </td>
+                        <td>
+                            <span class="arabic">خَيَّاطَة</span><br>
+                            <span class="gender-label female">Khayyatah</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Nelayan</td>
+                        <td>
+                            <span class="arabic">صَيَّاد</span><br>
+                            <span class="gender-label male">Sayyad</span>
+                        </td>
+                        <td>
+                            <span class="arabic">صَيَّادَة</span><br>
+                            <span class="gender-label female">Sayyadah</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="section-title">Contoh Kalimat</h2>
+            <div class="example-box">
+                <div class="example-item">
+                    <div class="example-arabic">هُوَ مُهَنْدِسٌ</div>
+                    <div class="example-translation">Dia (laki-laki) adalah seorang insinyur</div>
+                </div>
+                <div class="example-item">
+                    <div class="example-arabic">هِيَ مُهَنْدِسَةٌ</div>
+                    <div class="example-translation">Dia (perempuan) adalah seorang insinyur</div>
+                </div>
+                <div class="example-item">
+                    <div class="example-arabic">هُوَ مُمَرِّضٌ</div>
+                    <div class="example-translation">Dia (laki-laki) adalah seorang perawat</div>
+                </div>
+                <div class="example-item">
+                    <div class="example-arabic">هِيَ مُمَرِّضَةٌ</div>
+                    <div class="example-translation">Dia (perempuan) adalah seorang perawat</div>
+                </div>
+            </div>
+
+            <div class="tip">
+                <strong>Tips:</strong> Hafalkan bentuk laki-lakinya terlebih dahulu. Untuk bentuk perempuan, cukup tambahkan "ah" di akhir kata.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
